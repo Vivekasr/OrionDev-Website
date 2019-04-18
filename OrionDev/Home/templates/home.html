@@ -8,8 +8,110 @@
   <h1 class="margin">WITH US</h1>
 </div>
 
-<div class="container-fluid bg-2 text-center">
-  <h2 class="margin">About Us</h2>
-</div>
+<section id="about">
+  <div class="container">
+
+    <header class="section-header">
+      <h3>About Us</h3>
+      <p>We are Orion Developers. Get yourself a website and get online presence for your business.</p>
+    </header>
+
+    <div class="row about-cols">
+
+      <div class="col-md-4 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="img/about-mission.jpg" alt="" class="img-fluid">
+            <i class="icon ion-md-speedometer"></i>
+          </div>
+          <h2 class="title"><a href="#">Our Mission</a></h2>
+          <p>
+            our mission text
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <div class="img">
+            <img src="img/about-plan.jpg" alt="" class="img-fluid">
+            <i class="icon ion-ios-list"></i>
+          </div>
+          <h2 class="title"><a href="#">Our Plan</a></h2>
+          <p>
+            Our plan text
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="about-col">
+          <div class="img">
+            <img src="img/about-vision.jpg" alt="" class="img-fluid">
+            <i class="icon ion-ios-eye"></i>
+          </div>
+          <h2 class="title"><a href="#">Our Vision</a></h2>
+          <p>
+            our vision text
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--==========================
+  Services Section
+============================-->
+<section id="services">
+  <div class="container">
+
+    <header class="section-header wow fadeInUp">
+      <h3><a href="{% url 'services:index' %}">Services</a></h3>
+      <p>We provide the best servicess.</p>
+    </header>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+        <i class="icon ion-logo-buffer"></i>
+        <h4 class="title"><a href="">Full-Stack Web Development</a></h4>
+        <p class="description">With beautiful front-end and simple to use back-end. We provide you a website that you can manage with ease.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+        <i class="icon ion-logo-html5"></i>
+        <h4 class="title"><a href="">Front End Development</a></h4>
+        <p class="description">Get a nice web interface for your business.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+        <i class="icon ion-logo-android"></i>
+        <h4 class="title"><a href="">Mobile App Development</a></h4>
+        <p class="description">A mobile application for your business.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- #services -->
+
+<section id="clients" class="wow fadeInUp">
+  <div class="container">
+
+    <header class="section-header">
+      <h3><a href="{% url 'clients:index' %}">Our Clients</a></h3>
+    </header>
+
+    <div class="owl-carousel clients-carousel">
+      <img src="img/clients/client-1.png" alt="">
+      <img src="img/clients/client-2.png" alt="">
+      <img src="img/clients/client-3.png" alt="">
+      <img src="img/clients/client-4.png" alt="">
+    </div>
+
+  </div>
+</section><!-- #clients -->
+
 
 {% endblock %}
