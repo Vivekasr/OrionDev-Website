@@ -1,4 +1,4 @@
-#myNavbar, .home_body, .margin, #about, #services, #clients {
+#myNavbar, .home_body, .margin, #about, #services, #clients, #team, .our-services {
   font-family: 'Francois One', sans-serif;
 }
 .navbar {
@@ -21,7 +21,6 @@
 
 .bg-1 {
   background-color: #272727;
-  color: #00ffff;
   margin-top: 80px;
   border: 0px;
   height: 300px;
@@ -30,10 +29,12 @@
 .bg-1 h1{
   font-size: 48px;
   margin-left: 40px;
+  color: #efffff;
 }
 .bg-1 h2{
   font-size: 36px;
   margin-left: 40px;
+  color: #efffff;
 }
 .blankspace {
   height: 80px;
@@ -250,6 +251,84 @@
   background-color: #18d26e;
 }
 
+/* Team Section
+--------------------------------*/
+
+#team {
+  background: #fff;
+  padding: 60px 0;
+}
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #000;
+  position: relative;
+}
+#team .row {
+  position: center !important;
+}
+#team .member .member-info {
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+#team .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+#team .member:hover .member-info {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #0fffff;
+}
+#team .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #0fffff;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+#team .member .social a:hover {
+  color: #00ffff;
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
 
 #footer {
   background: #212121;
@@ -352,4 +431,39 @@
 }
 #footer .footer-top .footer-contact p {
   line-height: 26px;
+}
+
+/*===========================
+  Services page
+============================ */
+
+.our-services {
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color:#f9f9f9;
+}
+.services  {
+	text-align:center;
+}
+.services p {
+	margin-bottom:30px;
+	margin-top:30px;
+	color:#090909;
+}
+.icons i {
+	padding:50px;
+	border-radius:50%;
+	color:#00ffff;
+	background-color:#feffff;
+	border-color:#ccc;
+	margin-top:30px;
+	margin-bottom:30px;
+	box-shadow: 0 0 0 8px rgba(254,255,255,1);
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+.icons i:hover {
+	background-color:#00ffff;
+	color: #feffff;
 }
