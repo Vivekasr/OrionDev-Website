@@ -5,4 +5,5 @@ app_name = 'services'
 
 urlpatterns = [
     path('', views.index, name = 'index'),
+    path('services/', views.service, name='ourservice')
 ]
